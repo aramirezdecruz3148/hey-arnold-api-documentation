@@ -1,5 +1,4 @@
 import React from 'react';
-import allCharacters from '../data/characters';
 import paginatedCharacters from '../data/characters-pagination';
 import nameCharacters from '../data/characters-name';
 import randomCharacter from '../data/character-random';
@@ -12,10 +11,6 @@ export default function CharacterRoutes() {
       <section>
         <h4>Get All Characters</h4>
         <h5>https://hey-arnold-api.herokuapp.com/api/v1/characters</h5>
-        <div>
-          <pre>{JSON.stringify(allCharacters, null, 2)}</pre>
-        </div>
-        <h5>Pagination</h5>
         <p>
           This route will return a paginated list.
           By default, a list (or <q>page</q>), will return 20 characters.
@@ -31,7 +26,7 @@ export default function CharacterRoutes() {
         <p>
           This route does allow you to query characters by name, with
           the ability to return all partial matches regardless of casing,
-          e.g. ?name=hel
+          e.g. ?name=hel.
         </p>
         <h5>https://hey-arnold-api.herokuapp.com/api/v1/characters?name=hel</h5>
         <div>
