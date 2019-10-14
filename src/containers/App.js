@@ -1,12 +1,10 @@
 import React from 'react';
-import Title from '../components/Title';
-import Overview from '../components/Overview';
+import DocContainer from './DocContainer';
 
 export default function App() {
   return (
     <>
-      <Title />
-      <Overview />
+      <DocContainer />
     </>
   );
 }
