@@ -10,11 +10,11 @@ export default function Footer() {
       <div>
         <span>©<img src={myLogo} /></span>
       </div>
-      <div>
+      <span>
         <img src={githubLogo} />
         <img src={twitterLogo} />
         <img src={linkedinLogo} />
-      </div>
+      </span>
     </footer>
   );
 }

@@ -9,10 +9,8 @@ export default function Overview() {
         Nickelodeons Hey Arnold. Below you will find information on the 
         routes and endpoints. The information is publicly sourced and 
         I do not claim to own it.
-        <q>Move it Footballhead!!!</q>
-        Technologies used: Node.js, MongoDB, Mongoose, Cheerio, SuperTest
-        Jest
       </p>
+      <q>Move it Footballhead!!!</q>
     </>
   );
 }
