@@ -1,10 +1,20 @@
 import React from 'react';
+import githubLogo from '../assets/githubLogo.png';
+import twitterLogo from '../assets/twitterLogo.png';
+import linkedinLogo from '../assets/linkedinLogo.png';
+import myLogo from '../assets/myLogo.png';
 
 export default function Footer() {
   return (
     <footer>
-      <h5>© Alex Ramirez de Cruz</h5>
+      <div>
+        <span>©<img src={myLogo} /></span>
+      </div>
+      <div>
+        <img src={githubLogo} />
+        <img src={twitterLogo} />
+        <img src={linkedinLogo} />
+      </div>
     </footer>
   );
 }
-//include links to my twitter, linkedin, github
