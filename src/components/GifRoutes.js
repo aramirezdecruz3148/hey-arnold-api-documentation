@@ -12,3 +12,7 @@ export default function GifRoutes() {
     </>
   );
 }
+//get all gifs
+//get random gif
+//get a random gif by count
+//get a gif by id

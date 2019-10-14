@@ -12,3 +12,10 @@ export default function CharacterRoutes() {
     </>
   );
 }
+//routes:
+//get all characters
+//get all characters searchable by name
+//pagination for get all characters
+//get random character
+//get a random character by count
+//get a character by id

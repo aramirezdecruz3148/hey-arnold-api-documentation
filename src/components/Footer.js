@@ -7,3 +7,4 @@ export default function Footer() {
     </footer>
   );
 }
+//include links to my twitter, linkedin, github
