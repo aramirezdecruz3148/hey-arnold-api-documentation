@@ -3,11 +3,12 @@ import paginatedCharacters from '../data/characters-pagination';
 import nameCharacters from '../data/characters-name';
 import randomCharacter from '../data/character-random';
 import characterById from '../data/character-id';
+import styles from './CharacterRoutes.css';
 
 export default function CharacterRoutes() {
   return (
-    <>
-      <h3>Character Routes</h3>
+    <div className={styles.flex}>
+      <h3 className={styles.title}>Character Routes</h3>
       <section>
         <h4>Get All Characters</h4>
         <h5>https://hey-arnold-api.herokuapp.com/api/v1/characters</h5>
@@ -19,7 +20,7 @@ export default function CharacterRoutes() {
           the <q>page</q> query parameter, e.g. ?page=2.
         </p>
         <h5>{'https://hey-arnold-api.herokuapp.com/api/v1/characters?perPage=3&page=2'}</h5>
-        <div>
+        <div className={styles.codeBlock}>
           <pre>{JSON.stringify(paginatedCharacters, null, 2)}</pre>
         </div>
         <h5>Query by Character Name</h5>
@@ -29,7 +30,7 @@ export default function CharacterRoutes() {
           e.g. ?name=hel.
         </p>
         <h5>https://hey-arnold-api.herokuapp.com/api/v1/characters?name=hel</h5>
-        <div>
+        <div className={styles.codeBlock}>
           <pre>{JSON.stringify(nameCharacters, null, 2)}</pre>
         </div>
       </section>
@@ -40,18 +41,18 @@ export default function CharacterRoutes() {
           simply add a <q>count</q> query parameter, e.g. ?count=2.
         </p>
         <h5>https://hey-arnold-api.herokuapp.com/api/v1/characters/random?count=2</h5>
-        <div>
+        <div className={styles.codeBlock}>
           <pre>{JSON.stringify(randomCharacter, null, 2)}</pre>
         </div>
       </section>
       <section>
         <h4>Get Character by Id</h4>
         <h5>https://hey-arnold-api.herokuapp.com/api/v1/characters/5da237699734fdcb7bef8f51</h5>
-        <div>
+        <div className={styles.codeBlock}>
           <pre>{JSON.stringify(characterById, null, 2)}</pre>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

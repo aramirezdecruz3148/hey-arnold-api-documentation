@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3vw;
+}
+
+.codeBlock {
+  padding-top: 10px;
+  height: 20vh;
+  overflow: scroll;
+  list-style: none;
+  width: 75vw;
+  background: whitesmoke;
+}
+
+.title {
+  font-family: 'Luckiest Guy', cursive;
+  color: #FFD90F;
+  font-size: 3vw;
+  margin-bottom: -.5vw;
+  text-shadow:
+		-.2vw -.2vw 0 #000,
+		.2vw -.2vw 0 #000,
+		-.2vw .2vw 0 #000,
+    .2vw .2vw 0 #000;
+}
