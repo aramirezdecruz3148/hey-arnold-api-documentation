@@ -25,3 +25,21 @@
     .2vw .2vw 0 #000;
 }
 
+.endpoints {
+  font-size: 1.6vw;
+  font-style: italic;
+}
+
+.queries {
+  background: #cebfc4;
+  color: #4d4e5c;
+  width: 23vw;
+  padding: .5vw;
+  text-align: center;
+  font-size: 1.7vw;
+}
+
+.description {
+  font-size: 1.5vw;
+}
+
