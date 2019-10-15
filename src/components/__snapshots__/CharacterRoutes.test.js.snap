@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterRoutes component renders CharacterRoutes 1`] = `
+<div
+  className="flex"
+>
+  <h3
+    className="title"
+  >
+    Character Routes
+  </h3>
+  <section>
+    <h4
+      className="queries"
+    >
+      Get All Characters
+    </h4>
+    <h5
+      className="endpoints"
+    >
+      https://hey-arnold-api.herokuapp.com/api/v1/characters
+    </h5>
+    <p
+      className="description"
+    >
+      This route will return a paginated list. By default, a list (or 
+      <q>
+        page
+      </q>
+      ), will return 20 characters. To change this number, simply add a 
+      <q>
+        perPage
+      </q>
+       query parameter, e.g. ?perPage=3. You can move to the next page of results by adding the 
+      <q>
+        page
+      </q>
+       query parameter, e.g. ?page=2.
+    </p>
+    <h5
+      className="endpoints"
+    >
+      https://hey-arnold-api.herokuapp.com/api/v1/characters?perPage=3&page=2
+    </h5>
+    <div
+      className="codeBlock"
+    >
+      <pre>
+        [
+  {
+    "_id": "5da237699734fdcb7bef8f56",
+    "name": "Miles Shortman",
+    "image": "https://vignette.wikia.nocookie.net/heyarnold/images/2/2e/Miles.jpg/revision/latest/scale-to-width-down/243?cb=20101115140639"
+  },
+  {
+    "_id": "5da237699734fdcb7bef8f54",
+    "name": "Mitzi",
+    "image": "https://vignette.wikia.nocookie.net/heyarnold/images/d/d9/Mitzi.png/revision/latest/scale-to-width-down/310?cb=20171212070331"
+  },
+  {
+    "_id": "5da237699734fdcb7bef8f55",
+    "name": "Arnie",
+    "image": "https://vignette.wikia.nocookie.net/heyarnold/images/4/42/Arnie.jpg/revision/latest/scale-to-width-down/310?cb=20110109195825"
+  }
+]
+      </pre>
+    </div>
+    <h4
+      className="queries"
+    >
+      Query by Character Name
+    </h4>
+    <p
+      className="description"
+    >
+      This route does allow you to query characters by name, with the ability to return all partial matches regardless of casing, e.g. ?name=hel.
+    </p>
+    <h5
+      className="endpoints"
+    >
+      https://hey-arnold-api.herokuapp.com/api/v1/characters?name=hel
+    </h5>
+    <div
+      className="codeBlock"
+    >
+      <pre>
+        [
+  {
+    "_id": "5da237699734fdcb7bef8f63",
+    "name": "Helga G. Pataki",
+    "image": "https://vignette.wikia.nocookie.net/heyarnold/images/e/e5/Helga_Pataki.png/revision/latest/scale-to-width-down/266?cb=20190816021807"
+  },
+  {
+    "_id": "5da237699734fdcb7bef8f8b",
+    "name": "Shelley",
+    "image": "https://vignette.wikia.nocookie.net/heyarnold/images/c/cb/Shelley.jpg/revision/latest/scale-to-width-down/310?cb=20120527025256"
+  },
+  {
+    "_id": "5da237699734fdcb7bef902e",
+    "name": "Helga's Parrot (bird)",
+    "image": "https://vignette.wikia.nocookie.net/heyarnold/images/f/f1/Helga%27s_parrot%2C_bird.jpg/revision/latest/scale-to-width-down/310?cb=20100307071524"
+  },
+  {
+    "_id": "5da237699734fdcb7bef8fb8",
+    "name": "Shelley",
+    "image": "https://vignette.wikia.nocookie.net/heyarnold/images/c/cb/Shelley.jpg/revision/latest/scale-to-width-down/310?cb=20120527025256"
+  }
+]
+      </pre>
+    </div>
+  </section>
+  <section>
+    <h4
+      className="queries"
+    >
+      Get Random Character
+    </h4>
+    <p
+      className="description"
+    >
+      This route returns one random character by default. To change this number, simply add a 
+      <q>
+        count
+      </q>
+       query parameter, e.g. ?count=2.
+    </p>
+    <h5
+      className="endpoints"
+    >
+      https://hey-arnold-api.herokuapp.com/api/v1/characters/random?count=2
+    </h5>
+    <div
+      className="codeBlock"
+    >
+      <pre>
+        [
+  {
+    "_id": "5da237699734fdcb7bef9036",
+    "name": "Sidney",
+    "image": "https://vignette.wikia.nocookie.net/heyarnold/images/d/d4/Sidney.jpg/revision/latest/scale-to-width-down/310?cb=20120807185330"
+  },
+  {
+    "_id": "5da237699734fdcb7bef8f9e",
+    "name": "Edmund",
+    "image": "https://vignette.wikia.nocookie.net/heyarnold/images/0/0a/Edmund.png/revision/latest?cb=20171219083557"
+  }
+]
+      </pre>
+    </div>
+  </section>
+  <section>
+    <h4
+      className="queries"
+    >
+      Get Character by Id
+    </h4>
+    <h5
+      className="endpoints"
+    >
+      https://hey-arnold-api.herokuapp.com/api/v1/characters/5da237699734fdcb7bef8f51
+    </h5>
+    <div
+      className="codeBlock"
+    >
+      <pre>
+        {
+  "_id": "5da237699734fdcb7bef8f51",
+  "name": "Arnold Shortman",
+  "image": "https://vignette.wikia.nocookie.net/heyarnold/images/f/f5/Arnold.png/revision/latest?cb=20181027162333"
+}
+      </pre>
+    </div>
+  </section>
+</div>
+`;

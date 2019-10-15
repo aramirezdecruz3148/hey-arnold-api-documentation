@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title component renders Title 1`] = `
+<header>
+  <div
+    className="heroImage"
+  >
+    <h3>
+      Hey Arnold API!
+    </h3>
+  </div>
+</header>
+`;
