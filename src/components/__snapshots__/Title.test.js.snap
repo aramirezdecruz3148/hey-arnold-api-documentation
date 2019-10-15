@@ -2,8 +2,12 @@
 
 exports[`Title component renders Title 1`] = `
 <header>
-  <h3>
-    Hey Arnold API!
-  </h3>
+  <div
+    className="heroImage"
+  >
+    <h3>
+      Hey Arnold API!
+    </h3>
+  </div>
 </header>
 `;

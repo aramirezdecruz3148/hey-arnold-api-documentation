@@ -1,12 +1,89 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`GifRoutes component renders GifRoutes 1`] = `
-<Fragment>
-  <h4>
+<div
+  className="flex"
+>
+  <h3
+    className="title"
+  >
     Gif Routes
-  </h4>
-  <p>
-    This is where I will talk about the Gif route endpoints, have a couple code block examples of the res.body, and maybe have a table with the endpoints.
-  </p>
-</Fragment>
+  </h3>
+  <section>
+    <h4
+      className="queries"
+    >
+      Get All GIFs
+    </h4>
+    <h5
+      className="endpoints"
+    >
+      https://hey-arnold-api.herokuapp.com/api/v1/gifs
+    </h5>
+    <p
+      className="description"
+    >
+      This route will return a list of 49 Hey Arnold GIFs.
+    </p>
+  </section>
+  <section>
+    <h4
+      className="queries"
+    >
+      Get Random GIF
+    </h4>
+    <p
+      className="description"
+    >
+      This route returns one random GIF by default. To change this number, simply add a 
+      <q>
+        count
+      </q>
+       query parameter, e.g. ?count=2.
+    </p>
+    <h5
+      className="endpoints"
+    >
+      https://hey-arnold-api.herokuapp.com/api/v1/gifs/random?count=2
+    </h5>
+    <div
+      className="codeBlock"
+    >
+      <pre>
+        [
+  {
+    "_id": "5da23754845fd2cb76d59f10",
+    "gifLink": "https://media.tenor.com/images/7511947a6ae9acb62c9515bfba14b1ec/tenor.gif"
+  },
+  {
+    "_id": "5da23754845fd2cb76d59f05",
+    "gifLink": "https://media.tenor.com/images/369dabafda46a71e9fdea7ff6d89fc6d/tenor.gif"
+  }
+]
+      </pre>
+    </div>
+  </section>
+  <section>
+    <h4
+      className="queries"
+    >
+      Get GIF by Id
+    </h4>
+    <h5
+      className="endpoints"
+    >
+      https://hey-arnold-api.herokuapp.com/api/v1/gifs/5da23754845fd2cb76d59ee7
+    </h5>
+    <div
+      className="codeBlock"
+    >
+      <pre>
+        {
+  "_id": "5da23754845fd2cb76d59ee7",
+  "gifLink": "https://media.tenor.com/images/4393cee845d8464670817e40b0601e3b/tenor.gif"
+}
+      </pre>
+    </div>
+  </section>
+</div>
 `;

@@ -2,8 +2,48 @@
 
 exports[`Footer component renders Footer 1`] = `
 <footer>
-  <h5>
-    © Alex Ramirez de Cruz
-  </h5>
+  <div>
+    <a
+      href="https://alexramirezdecruz.com/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <h4>
+        © Alex Ramirez de Cruz
+      </h4>
+    </a>
+  </div>
+  <span>
+    <a
+      href="https://github.com/aramirezdecruz3148"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        className="logo"
+        src="/path/image"
+      />
+    </a>
+    <a
+      href="https://twitter.com/dev_de_cruz"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        className="logoT"
+        src="/path/image"
+      />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/alex-ramirez-de-cruz/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        className="logo"
+        src="/path/image"
+      />
+    </a>
+  </span>
 </footer>
 `;
