@@ -1,12 +1,13 @@
 import React from 'react';
+import styles from './Title.css';
 
 export default function Title() {
   return (
     <header>
-      <h3>Hey Arnold API!</h3>
+      <div className={styles.heroImage}>
+        <h3>Hey Arnold API!</h3>
+      </div>
     </header>
   );
 }
-//add some pictures and perhaps some decoration
-//look back at how I created the lettering for the simpsons build
-//the hey arnold text looks really similar
+

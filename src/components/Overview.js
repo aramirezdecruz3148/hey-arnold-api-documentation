@@ -3,7 +3,7 @@ import React from 'react';
 export default function Overview() {
   return (
     <>
-      <h4>Overview</h4>
+      <h3>Overview</h3>
       <p>
         The Hey Arnold API provides character information and GIFs from
         Nickelodeons Hey Arnold. Below you will find information on the 
